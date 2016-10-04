@@ -1,0 +1,36 @@
+.header {
+    background: $color-dark-blue;
+    min-height: 192px;
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    //box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    &__logo {
+        text-indent: -9999px;
+        background: url(../images/logo.png) no-repeat;
+        width: 140px;
+        height: 131px;
+        margin-right: 48px;
+        margin-top: 1px;
+    }
+
+}
+@include width-1400 {
+    .header{
+        margin: 0;
+        padding: 0 110px;
+        &__logo {
+            margin: 0 10px;
+            flex-shrink: 0;
+        }
+    }
+}
+@include tablet {
+    .header {
+        padding: 0;
+    }
+}

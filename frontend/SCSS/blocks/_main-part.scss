@@ -1,0 +1,17 @@
+.main-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-bottom: 51px;
+}
+
+@include width-1200 {
+    .main-part {
+        padding: 0 7px;
+    }
+}
+@include phone {
+    .main-part {
+        flex-direction: column;
+    }
+}
