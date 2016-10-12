@@ -1,17 +1,16 @@
 .main-part {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 51px;
-    margin-bottom: 51px;
-}
-
-@include width-1200 {
-    .main-part {
-        padding: 0 7px;
+    &__top {
+        background: url("../images/top-bg.jpg");
+        min-height: 410px;
+        margin: 0 -9999px 5px;
+        padding: 0 9999px;
     }
-}
-@include phone {
-    .main-part {
-        flex-direction: column;
+    &__bottom {
+        background: url("../images/game.jpg");
+        margin: 0 -9999px;
+        padding: 0 9999px;
+        min-height: 598px;
+        background-position-y: -170px;
+        display: flex;
     }
 }

@@ -1,0 +1,36 @@
+.user {
+    display: flex;
+    align-items: center;
+    &__image {
+        width: 215px;
+        height: 215px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 3px 0 rgba(5, 5, 5, 0.75);
+        border: 10px rgba(22, 35, 0, 0.502) solid;
+        background-image: url("../images/user-image.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $color-white;
+        margin-right: 20px;
+    }
+    &__buttons-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 135px;
+    }
+    &__button {
+        border-radius: 5px;
+        background-image: linear-gradient( to top, rgb(83,12,1) 0%, rgb(143,19,0) 50%, rgb(173,25,2) 50%, rgb(196,26,0) 100%);
+        width: 201px;
+        height: 57px;
+        box-shadow: 0px 3px 3px 0px rgba(5, 5, 5, 0.46);
+        color: $color-white;
+        font: 24px/30px $font;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0.5px;
+    }
+}

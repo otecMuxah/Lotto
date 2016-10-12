@@ -1,0 +1,35 @@
+.controls {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: url(../images/buttons-bg.png) no-repeat 7px 5px;
+        padding: 15px;
+        width: 491px;
+    }
+    &__link {
+        height: 84px;
+        width: 84px;
+        display: block;
+        &--sound {
+            background-position: -8px -336px;
+        }
+        &--settings {
+            background-position: -8px -225px;
+        }
+        &--play {
+            background-position: -4px -454px;
+            width: 97px;
+            height: 97px;
+            margin: 0 5px;
+        }
+        &--help {
+            background-position: -8px -8px;
+        }
+        &--share {
+            background-position: -8px -117px;
+        }
+    }
+
+
+}

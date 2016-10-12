@@ -1,0 +1,38 @@
+.bottom-news {
+    width: 100%;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font: 17px $font_light;
+    padding-top: 35px;
+    &__wrapper {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 1px 3px 0px rgba(44, 44, 44, 0.8),inset 0px 1px 4.15px 0.85px rgba(5, 5, 5, 0.6);
+        border-radius: 20px 20px 0 0 ;
+        padding: 25px;
+        height: 516px;
+        overflow: auto;
+    }
+    &__title {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px
+    }
+    &__changelog {
+        list-style: disc;
+        padding-left: 20px;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+    &__article {
+        margin-bottom: 25px;
+        &--title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
