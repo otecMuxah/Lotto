@@ -1,0 +1,30 @@
+.game-card {
+    padding: 5px;
+    background: #fff;
+    margin-bottom: 15px;
+    &__table {
+        border-collapse: collapse;
+        background: $color-white;
+
+    }
+    &__cell {
+        width: 57px;
+        height: 57px;
+        border: 2px solid #b4b4b4;
+        font: 700 40px $font_light;
+        color: #161616;
+        text-align: center;
+        vertical-align: middle;
+        &--hit {
+            background-position: -60px -1214px;
+            width: 55px;
+            height: 54px;
+        }
+        &--miss {
+            background-position: -62px -1280px;
+            width: 47px;
+            height: 47px;
+        }
+
+    }
+}

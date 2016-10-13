@@ -1,0 +1,67 @@
+.userlist {
+    display: flex;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        img {
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        &:first-child {
+
+            img {
+                width: 90px;
+                height: 90px;
+                border: 5px solid #c31a00;
+            }
+            .userlist__user {
+                display: none;
+            }
+            .userlist__score {
+                display: none;
+            }
+
+        }
+    }
+    &__user {
+        color: $color-white;
+        font: 16px $font_light;
+    }
+    &__score {
+        position: absolute;
+        color: #c31a00;
+        top: 40px;
+        right: 10px;
+        font: 14px $font_light;
+    }
+    &__bar {
+        position: absolute;
+        top: -10px;
+        right: 50%;
+        transform: translate(50%,0);
+        width: 47px;
+        height: 8px;
+        display: flex;
+
+        &--first {
+            background: green;
+            width: 33%;
+            height: 100%;
+        }
+        &--second {
+            background: #fff;
+            width: 33%;
+            height: 100%;
+        }
+        &--third {
+            background: grey;
+            width: 33%;
+            height: 100%;
+        }
+    }
+}

@@ -12,7 +12,7 @@ $color-dark-blue: #140c3b;
 $color-yellow: #e5bd62;
 $color-dark-green: #0b311c;
 $color-white: #fff;
-
+$color-gold: #fec02b;
 //fonts
 
 @font-face {
@@ -39,7 +39,15 @@ $font_light:      Roboto-Light, Arial, sans-serif;
 .resources__silver:before,
 .resources__stars:after,
 .controls__link,
-.contact-developer {
+.contact-developer:after,
+.barrels__item,
+.barrels__item:last-child::after,
+.addons__coins,
+.addons__link--cancel:after,
+.addons__link--search:after,
+.resources__mute:after,
+.game-card__cell--hit,
+.game-card__cell--miss {
     background: url("../images/sprite.png") no-repeat;
 }
 

@@ -1,4 +1,18 @@
 .main-part {
+
+    &--ingame {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 910px;
+        width: 100%;
+        background:
+                url("../images/table.png") no-repeat 50% 50%,
+                radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(31,5,1) 130%);
+
+        margin: 0 -9999px;
+        padding: 12px 9999px;
+    }
     &__top {
         background: url("../images/top-bg.jpg");
         min-height: 410px;
@@ -12,5 +26,8 @@
         min-height: 598px;
         background-position-y: -170px;
         display: flex;
+    }
+    &__game-table {
+
     }
 }

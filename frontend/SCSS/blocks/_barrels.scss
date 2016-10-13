@@ -1,0 +1,63 @@
+.barrels {
+    background: url("../images/barrels-bg.png") no-repeat;
+    width: 428px;
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-shrink: 0;
+    &__barrel {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 28px $font_light;
+        background-color: $color-white;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 1px;
+    }
+    &__item {
+        width: 55px;
+        height: 55px;
+        background-position: 0 -1022px;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child {
+            width: 116px;
+            height: 116px;
+            background-position: 0 -893px;
+            margin-left: 5px;
+            margin-bottom: 7px;
+            .barrels__barrel {
+                width: 97px;
+                height: 97px;
+                font: 65px $font_light;
+            }
+        }
+        &:last-child {
+            background-position: -61px -1024px;
+            position: relative;
+            z-index: 1;
+            margin-left: 14px;
+            .barrels__barrel {
+                z-index: 1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -3px;
+                right: -2px;
+                background-position: 0 -1093px;
+                width: 59px;
+                height: 62px;
+                z-index: 0;
+            }
+        }
+    }
+
+}

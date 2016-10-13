@@ -10,38 +10,223 @@
 <body>
 <div class="wrapper">
     <div class="wrapper--inner">
-        <header class="header header__ingame">
-            <ul class="userlist">
-                <li class="userlist__item"><span class="userlist__user"></span></li>
-                <li class="userlist__item"><span class="userlist__user">Вася</span></li>
-                <li class="userlist__item"><span class="userlist__user">Вася</span></li>
-                <li class="userlist__item"><span class="userlist__user">Вася</span></li>
-                <li class="userlist__item"><span class="userlist__user">Вася</span></li>
-                <li class="userlist__item"><span class="userlist__user">Вася</span></li>
-            </ul>
-            <ul class="barrels">
-                <li class="barrels__item"><span class="barrels__barrel">63</span></li>
-                <li class="barrels__item"><span class="barrels__barrel">69</span></li>
-                <li class="barrels__item"><span class="barrels__barrel">32</span></li>
-                <li class="barrels__item"><span class="barrels__barrel">22</span></li>
-                <li class="barrels__item"><span class="barrels__barrel">40</span></li>
-                <li class="barrels__item"><span class="barrels__barrel">22</span></li>
-            </ul>
-            <ul class="addons">
-                <li class="addons__item"><a href="#" class="addons__link">+1</a></li>
-                <li class="addons__item"><a href="#" class="addons__link">+5</a></li>
-                <li class="addons__item"><a href="#" class="addons__link"></a></li>
-                <li class="addons__item"><a href="#" class="addons__link"></a></li>
-            </ul>
-            <div class="resources__wrapper">
-                <div class="resources__gold">120 M</div>
-                <a href="#" class="resources__mute"></a>
-                <a href="#" class="resources__leave">Покинуть стол</a>
+        <header class="header ">
+            <div class="header__ingame">
+                <ul class="userlist">
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                    <li class="userlist__item">
+                        <img src="images/user-image.png" alt="User Image">
+                        <span class="userlist__user">Вася</span>
+                        <span class="userlist__score">100</span>
+                        <span class="userlist__bar">
+                        <span class="userlist__bar--first"></span>
+                        <span class="userlist__bar--second"></span>
+                        <span class="userlist__bar--third"></span>
+                    </span>
+                    </li>
+                </ul>
+                <ul class="barrels">
+                    <li class="barrels__item"><span class="barrels__barrel">63</span></li>
+                    <li class="barrels__item"><span class="barrels__barrel">69</span></li>
+                    <li class="barrels__item"><span class="barrels__barrel">32</span></li>
+                    <li class="barrels__item"><span class="barrels__barrel">22</span></li>
+                    <li class="barrels__item"><span class="barrels__barrel">40</span></li>
+                    <li class="barrels__item"><span class="barrels__barrel">22</span></li>
+                </ul>
+                <ul class="addons">
+                    <li class="addons__item">
+                        <a href="#" class="addons__link addons__link--1">+1</a>
+                        <span class="addons__coins">3</span>
+                    </li>
+                    <li class="addons__item">
+                        <a href="#" class="addons__link addons__link--5">+5</a>
+                        <span class="addons__coins">3</span>
+
+                    </li>
+                    <li class="addons__item">
+                        <a href="#" class="addons__link addons__link--cancel"></a>
+                        <span class="addons__coins">3</span>
+                    </li>
+                    <li class="addons__item">
+                        <a href="#" class="addons__link addons__link--search"></a>
+                        <span class="addons__coins">3</span>
+                    </li>
+                </ul>
+                <div class="resources__wrapper resources__wrapper--ingame">
+                    <div class="resources__gold">120 M</div>
+                    <a href="#" class="resources__mute"></a>
+                    <a href="#" class="resources__leave">Покинуть стол</a>
+                </div>
             </div>
         </header>
-        <main class="main-part">
+        <main class="main-part--ingame">
             <section class="main-part__game-table">
-                
+                <div class="game-card">
+                    <table class="game-card__table">
+                        <tbody>
+                            <tr>
+                                <td class="game-card__cell">8</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell">24</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell">49</td>
+                                <td class="game-card__cell">55</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell">84</td>
+                            </tr>
+                            <tr>
+                                <td class="game-card__cell">5</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell game-card__cell--hit"></td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell game-card__cell--miss">69</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell">82</td>
+                            </tr>
+                            <tr>
+                                <td class="game-card__cell">18</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell  game-card__cell--miss">22</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell game-card__cell--hit"></td>
+                                <td class="game-card__cell">76</td>
+                                <td class="game-card__cell"></td>
+                                <td class="game-card__cell"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="game-card">
+                    <table class="game-card__table">
+                        <tbody>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="game-card">
+                    <table class="game-card__table">
+                        <tbody>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                            <td class="game-card__cell"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </main>
     </div>
