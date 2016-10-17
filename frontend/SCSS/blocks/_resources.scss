@@ -85,8 +85,17 @@
         align-items: center;
         justify-content: center;
     }
+    &__gem {
+        background-position: -6px -1316px;
+        width: 36px;
+        height: 40px;
+        margin-left: 31px;
+        &--active {
+            background-position: -6px -1374px;
+        }
+    }
     &__mute {
-        background: linear-gradient( 0deg, rgb(28,40,6) 0%, rgb(51,63,29) 50%, rgb(62,74,40) 50%, rgb(69,81,47) 100%);;
+        background: linear-gradient( 0deg, rgb(28,40,6) 0%, rgb(51,63,29) 50%, rgb(62,74,40) 50%, rgb(69,81,47) 100%);
         display: flex;
         align-items: center;
         justify-content: center;

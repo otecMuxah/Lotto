@@ -24,7 +24,15 @@
 .addons__link--search:after,
 .resources__mute:after,
 .game-card__cell--hit,
-.game-card__cell--miss {
+.game-card__cell--miss,
+.rooms__lock:after,
+.rooms__speed-up:after,
+.rooms__smile:after,
+.rooms__button:before,
+.rooms__slider .ui-slider-handle,
+.resources__gem,
+.rooms-board__money:after,
+.rooms-board__users:after {
   background: url("../images/sprite.png") no-repeat; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -105,6 +113,31 @@ body {
     width: 100%;
     height: 100%; }
 
+.button {
+  color: #fff;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Roboto-Light, Arial, sans-serif; }
+  .button--green {
+    background: -webkit-linear-gradient(bottom, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%);
+    background: linear-gradient(0deg, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%); }
+  .button--red {
+    background: -webkit-linear-gradient(bottom, #530c01 0%, #8f1300 50%, #ad1902 50%, #c41a00 100%);
+    background: linear-gradient(0deg, #530c01 0%, #8f1300 50%, #ad1902 50%, #c41a00 100%); }
+  .button:hover {
+    background: -webkit-linear-gradient(bottom, #b57002 0%, #e08f0c 50%, #e6a910 50%, #fee048 100%);
+    background: linear-gradient(0deg, #b57002 0%, #e08f0c 50%, #e6a910 50%, #fee048 100%); }
+
 .header {
   background: #161616;
   display: -webkit-box;
@@ -135,6 +168,16 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%; }
+  .header--rooms {
+    min-height: 122px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-bottom: 3px;
+    box-sizing: border-box; }
 
 .resources {
   font: 18px/23px Roboto-Black, Arial, sans-serif; }
@@ -236,6 +279,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .resources__gem {
+    background-position: -6px -1316px;
+    width: 36px;
+    height: 40px;
+    margin-left: 31px; }
+    .resources__gem--active {
+      background-position: -6px -1374px; }
   .resources__mute {
     background: -webkit-linear-gradient(bottom, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%);
     background: linear-gradient(0deg, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%);
@@ -691,3 +741,288 @@ body {
       background-position: -62px -1280px;
       width: 47px;
       height: 47px; }
+
+.rooms {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .rooms__slider {
+    width: 401px; }
+    .rooms__slider .ui-slider-handle {
+      background-position: -14px -1272px;
+      width: 20px;
+      height: 20px;
+      border: 0;
+      border-radius: 50%;
+      top: -6px;
+      border: 4px solid #424e2c; }
+      .rooms__slider .ui-slider-handle:active, .rooms__slider .ui-slider-handle:focus {
+        outline: 0; }
+    .rooms__slider .ui-slider {
+      background: url("../images/slider-bg.png") no-repeat;
+      width: 401px;
+      height: 16px;
+      border: 0; }
+    .rooms__slider .ui-slider-range {
+      background: #424e2c;
+      height: 8px;
+      top: 4px;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.75); }
+  .rooms__slider-signs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 451px;
+    margin: 5px -20px 0; }
+    .rooms__slider-signs li:nth-child(2) {
+      margin-left: 17px; }
+    .rooms__slider-signs li:nth-child(3) {
+      margin-left: 10px; }
+    .rooms__slider-signs span {
+      font: 500 18px Roboto-Light, Arial, sans-serif;
+      color: #fff; }
+  .rooms__button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 10px 16px 10px 13px;
+    font: 700 16px Roboto-Light, Arial, sans-serif; }
+    .rooms__button:before {
+      content: "";
+      position: relative;
+      background-position: -100px -1347px;
+      width: 15px;
+      height: 25px;
+      margin-right: 12px; }
+  .rooms__display {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font: 18px Roboto-Light, Arial, sans-serif;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 11px;
+    margin-right: 49px; }
+    .rooms__display span {
+      margin-right: 16px;
+      letter-spacing: 0.4px; }
+  .rooms__buttons-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rooms__buttons-list a {
+      width: 36px;
+      height: 36px; }
+    .rooms__buttons-list li {
+      margin-right: 12px; }
+  .rooms__lock:after {
+    content: '';
+    position: relative;
+    width: 17px;
+    height: 22px;
+    background-position: -12px -1428px; }
+  .rooms__speed-up:after {
+    content: '';
+    position: relative;
+    background-position: -91px -1388px;
+    width: 24px;
+    height: 21px; }
+  .rooms__smile:after {
+    content: '';
+    position: relative;
+    background-position: -54px -1388px;
+    width: 22px;
+    height: 21px; }
+  .rooms__resources {
+    top: 3px; }
+    .rooms__resources .resources__gold,
+    .rooms__resources .resources__silver {
+      padding-right: 10px;
+      margin-left: 13px;
+      min-width: 126px; }
+      .rooms__resources .resources__gold:before,
+      .rooms__resources .resources__silver:before {
+        display: none; }
+  .rooms__main {
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    background: url("../images/top-bg.jpg");
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .rooms__footer {
+    background: #161616;
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    min-height: 18px; }
+
+.rooms-board {
+  padding-top: 50px; }
+  .rooms-board__item {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.502);
+    box-shadow: 0px 1px 3px 0px rgba(58, 69, 37, 0.8), inset 0px 1px 4.15px 0.85px rgba(5, 5, 5, 0.6);
+    height: 91px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 9px;
+    box-sizing: border-box;
+    font: 22px Roboto-Light, Arial, sans-serif;
+    color: #fff; }
+    .rooms-board__item--wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      margin-right: 11px; }
+  .rooms-board__inner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%; }
+    .rooms-board__inner-wrapper:last-child {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+  .rooms-board__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    padding: 0px 40px 0;
+    font-size: 20px; }
+  .rooms-board__money {
+    font-weight: 700;
+    padding: 4px 0 0 40px;
+    position: relative; }
+    .rooms-board__money:after {
+      content: '';
+      background-position: -71px -650px;
+      width: 34px;
+      height: 38px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .rooms-board__users {
+    padding: 0 0 0 31px;
+    position: relative; }
+    .rooms-board__users:after {
+      content: '';
+      background-position: -58px -1348px;
+      width: 23px;
+      height: 25px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .rooms-board__username {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .rooms-board__powerup {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(bottom, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%);
+    background: linear-gradient(0deg, #1c2806 0%, #333f1d 50%, #3e4a28 50%, #45512f 100%);
+    position: relative;
+    margin-bottom: 7px; }
+  .rooms-board .rooms__speed-up:after,
+  .rooms-board .rooms__smile:after,
+  .rooms-board .rooms__lock:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.create-game {
+  width: 540px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 97.5%);
+          transform: translate(-50%, 97.5%);
+  background: #161616;
+  box-shadow: 0px -2px 0px 0px rgba(160, 160, 160, 0.004); }
+  .create-game--active {
+    -webkit-transform: translate(-50%, -26%);
+            transform: translate(-50%, -26%);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+  .create-game--wrapper {
+    position: relative;
+    padding: 35px 15px 15px; }
+  .create-game__title {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    background: url("../images/create-game.png");
+    width: 135px;
+    height: 91px; }
+  .create-game__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.502);
+    box-shadow: 0px 1px 3px 0px rgba(58, 69, 37, 0.8), inset 0px 1px 4.15px 0.85px rgba(5, 5, 5, 0.6);
+    height: 70px; }
+  .create-game__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .create-game__buttons li {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%; }
+    .create-game__buttons a {
+      font-size: 22px;
+      padding: 16px; }
+  .create-game__button {
+    padding: 16px; }
+  .create-game .rooms-board__money {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700; }

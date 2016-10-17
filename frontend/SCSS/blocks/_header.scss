@@ -20,5 +20,12 @@
         justify-content: space-between;
         width: 100%;
     }
+    &--rooms {
+        min-height: 122px;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-bottom: 3px;
+        box-sizing: border-box;
 
+    }
 }

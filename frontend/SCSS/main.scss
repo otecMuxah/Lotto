@@ -4,6 +4,7 @@
 @import "core/core";
 //blocks
 @import "blocks/wrapper";
+@import "blocks/button";
 @import "blocks/header";
 @import "blocks/resources";
 @import "blocks/main-part";
@@ -16,3 +17,7 @@
 @import "blocks/barrels";
 @import "blocks/addons";
 @import "blocks/game-card";
+@import "blocks/rooms";
+@import "blocks/rooms-board";
+@import "blocks/create-game";
+

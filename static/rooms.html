@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range-min" ).slider({
+                range: true,
+                min: 1,
+                max: 7,
+                values: [ 1, 3 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.value );
+                }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+            $(".create-game__title").on('click', function () {
+                $(this).closest(".create-game").toggleClass("create-game--active");
+            })
+        } );
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="wrapper--inner rooms">
+        <header class="header ">
+            <div class="header__ingame header--rooms">
+                <a href="#" class="rooms__button button button--red">Назад</a>
+                <div class="rooms__display">
+                    <span>Отображать только:</span>
+                    <ul class="rooms__buttons-list">
+                        <li><a class="rooms__lock button button--green" href="#"></a></li>
+                        <li><a class="rooms__speed-up button button--green" href="#"></a></li>
+                        <li><a class="rooms__smile button button--green" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="rooms__slider">
+                    <p style="display: none">
+                        <label for="amount">Maximum price:</label>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="slider-range-min" ></div>
+                    <ul class="rooms__slider-signs">
+                        <li><span>100</span></li>
+                        <li><span>1K</span></li>
+                        <li><span>10K</span></li>
+                        <li><span>100K</span></li>
+                        <li><span>1M</span></li>
+                        <li><span>10M</span></li>
+                        <li><span>100M</span></li>
+                    </ul>
+                </div>
+
+                <div class="resources__wrapper resources__wrapper--ingame rooms__resources">
+                    <div class="resources__gold">120 M</div>
+                    <div class="resources__silver ">120 M</div>
+                    <div class="resources__gem"></div>
+                </div>
+            </div>
+        </header>
+        <main class="rooms__main">
+            <div class="rooms__main--wrapper">
+                <div class="rooms-board">
+                    <ul class="rooms-board__list">
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+                                    <span class="rooms-board__powerup rooms__speed-up"></span>
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+                                    <span class="rooms-board__powerup rooms__smile"></span>
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+                                    <span class="rooms-board__powerup rooms__lock"></span>
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+                                    <span class="rooms-board__powerup rooms__speed-up"></span>
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                        <li class="rooms-board__item">
+                            <div class="rooms-board__item--wrapper">
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__money">100</span>
+                                    <span class="rooms-board__users">5</span>
+                                </div>
+                                <div class="rooms-board__inner-wrapper">
+                                    <span class="rooms-board__username">Машка</span>
+                                    <span class="rooms-board__powerup rooms__speed-up"></span>
+                                </div>
+
+                            </div>
+                            <a href="#" class="button button--red rooms-board__button">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="rooms__footer">
+
+        </footer>
+    </div>
+    <div class="create-game">
+        <div class="create-game--wrapper">
+            <span class="create-game__title"></span>
+            <ul class="create-game__buttons">
+                <li><a class="rooms__speed-up button button--green" href="">Быстрая</a></li>
+                <li><a class="rooms__smile button button--green" href="">Crazy</a></li>
+                <li><a class="rooms__lock button button--green" href="">Приват</a></li>
+            </ul>
+            <ul class="create-game__list">
+                <li class="create-game__item"><span class="rooms-board__money">100</span><a href="#"
+                                                                                            class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">250</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">500</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">1000</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">2500</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">5000</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">10000</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">25000</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+                <li class="create-game__item"><span class="rooms-board__money">50000</span><a href=""
+                                                                                          class="create-game__button button button--green">Создать</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>

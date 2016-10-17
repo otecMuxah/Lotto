@@ -47,7 +47,16 @@ $font_light:      Roboto-Light, Arial, sans-serif;
 .addons__link--search:after,
 .resources__mute:after,
 .game-card__cell--hit,
-.game-card__cell--miss {
+.game-card__cell--miss,
+.rooms__lock:after,
+.rooms__speed-up:after,
+.rooms__smile:after,
+.rooms__button:before,
+.rooms__slider .ui-slider-handle,
+.resources__gem,
+.rooms-board__money:after,
+.rooms-board__users:after
+ {
     background: url("../images/sprite.png") no-repeat;
 }
 

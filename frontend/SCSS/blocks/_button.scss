@@ -1,0 +1,19 @@
+.button {
+    color: $color-white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+    font-family: $font_light;
+    &--green {
+        background: linear-gradient( 0deg, rgb(28,40,6) 0%, rgb(51,63,29) 50%, rgb(62,74,40) 50%, rgb(69,81,47) 100%);
+    }
+    &--red {
+        background: linear-gradient( 0deg, rgb(83,12,1) 0%, rgb(143,19,0) 50%, rgb(173,25,2) 50%, rgb(196,26,0) 100%);
+    }
+    &:hover {
+        background:  linear-gradient( 0deg, rgb(181,112,2) 0%, rgb(224,143,12) 50%, rgb(230,169,16) 50%, rgb(254,224,72) 100%);
+    }
+}
