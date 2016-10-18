@@ -1,0 +1,90 @@
+.get-gold {
+    font: 20px $font_light;
+    header {
+        padding-top: 9px;
+        padding-bottom: 6px;
+        min-height: auto;
+    }
+    &__wrapper {
+        //box-shadow: 0 3px 0 0 rgba(160, 160, 160, 0.4);
+        padding: 49px 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__list {
+        width: 100%;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.502);
+        box-shadow: 0 1px 3px 0 rgba(58, 69, 37, 0.8),inset 0 1px 4.15px 0.85px rgba(5, 5, 5, 0.6);
+        height: 82px;
+        box-sizing: border-box;
+        margin-bottom: 9px;
+        padding: 10px;
+    }
+    &__gold {
+        position: relative;
+        color: $color-white;
+        padding-left: 35px;
+        font-size: 20px;
+        &:after {
+            content: '';
+            position: absolute;
+            background-position: -72px -591px;
+            width: 33px;
+            height: 38px;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+    &__price-wrapper {
+        display: flex;
+        align-items: center;
+        .button {
+            padding: 16px 28px;
+            font-size: 20px;
+            margin-left: 11px;
+        }
+        .get-gold__gold {
+            padding-left: 0;
+            padding-right: 35px;
+            &:after {
+                left: auto;
+                right: 0;
+            }
+        }
+
+    }
+    &__price {
+        color: $color-white;
+        font: 20px $font_light;
+        strong {
+            font-weight: 700;
+            margin-left: 36px;
+        }
+    }
+    &__silver {
+        position: relative;
+        color: $color-white;
+        padding-left: 35px;
+        font: 700 20px $font_light;
+        &:after {
+            content: '';
+            position: absolute;
+            background-position: -71px -650px;
+            width: 33px;
+            height: 38px;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+}
