@@ -7,6 +7,8 @@
     position: relative;
     text-transform: uppercase;
     font-family: $font_light;
+    transition: background 1s linear;
+    box-shadow: 0 5px 6px 0 rgba(5, 5, 5, 0.46);
     &--green {
         background: linear-gradient( 0deg, rgb(28,40,6) 0%, rgb(51,63,29) 50%, rgb(62,74,40) 50%, rgb(69,81,47) 100%);
     }
@@ -15,5 +17,6 @@
     }
     &:hover {
         background:  linear-gradient( 0deg, rgb(181,112,2) 0%, rgb(224,143,12) 50%, rgb(230,169,16) 50%, rgb(254,224,72) 100%);
+        transition: background 1s linear;
     }
 }

@@ -36,3 +36,22 @@
     }
 
 }
+
+@include phone {
+    .bottom-news {
+        font-size: 10px;
+        &__title {
+            font-size: 10px;
+        }
+        &__article {
+            &--title {
+                font-size: 10px;
+            }
+        }
+        &__wrapper {
+            overflow: visible;
+            padding-bottom: 50px;
+            height: auto;
+        }
+    }
+}

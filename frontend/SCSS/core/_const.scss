@@ -3,7 +3,7 @@ $res_550: 550px;
 $res_610: 610px;
 $res_770: 770px;
 $res_960: 960px;
-$res_1100: 1100px;
+$res_1020: 1020px;
 $res_1220: 1220px;
 $res_1400: 1400px;
 
@@ -29,7 +29,7 @@ $color-gold: #fec02b;
 }
 $font:            Roboto-Black, Arial, sans-serif;
 $font_light:      Roboto-Light, Arial, sans-serif;
-//$font_roman_bold: BodoniFLF-Bold, Arial, sans-serif;
+$font_bold: Roboto-Black, Arial, sans-serif;
 
 //sprite
 
@@ -61,7 +61,10 @@ $font_light:      Roboto-Light, Arial, sans-serif;
 .get-gold__gold:after,
 .get-gold__silver:after,
 .pre-game__invite:after,
-.profile__title:after
+.profile__title:after,
+.rating-game__button--silver:after,
+.rating-game__button--prize:after,
+.rating-game__button--star:after
  {
     background: url("../images/sprite.png") no-repeat;
 }

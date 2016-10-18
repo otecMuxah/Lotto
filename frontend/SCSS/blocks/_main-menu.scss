@@ -10,5 +10,15 @@
     &__inner-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+}
+
+@include phone {
+    .main-menu {
+        &__wrapper {
+            align-items: flex-start;
+            min-height: 310px;
+        }
     }
 }

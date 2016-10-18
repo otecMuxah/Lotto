@@ -28,3 +28,24 @@
         }
     }
 }
+
+@include phone {
+    .friends {
+        &__item {
+            padding: 4px;
+        }
+        &__wrapper {
+            padding: 60px 3px 30px;
+            .button {
+                font-size: 14px;
+                padding: 10px 5px;
+            }
+            .after-game__avatar {
+                margin-right: 5px;
+            }
+            .after-game__user-wrapper {
+                width: 153px;
+            }
+        }
+    }
+}

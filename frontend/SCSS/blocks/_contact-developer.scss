@@ -19,3 +19,8 @@
 
 
 }
+@include phone {
+    .contact-developer {
+        font-size: 12px;
+    }
+}

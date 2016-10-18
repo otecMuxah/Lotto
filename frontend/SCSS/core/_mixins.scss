@@ -9,7 +9,7 @@
     }
 }
 @mixin desktop {
-    @media screen and (max-width: $res_960) {
+    @media screen and (max-width: $res_1020) {
         @content;
     }
 }
@@ -24,7 +24,7 @@
   }
 }
 @mixin phone {
-  @media screen and (max-width: $res_550) {
+  @media screen and (max-width: $res_610) {
     @content;
   }
 }

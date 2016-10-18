@@ -24,6 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        margin-left: 10px;
         &:after {
             content: '';
             background-position: -72px -591px;
@@ -117,5 +118,22 @@
             justify-content: center;
             background-position: -7px -1171px;
         }
+    }
+}
+
+@include phone {
+    .resources {
+        &__wrapper {
+            font-size: 13px;
+        }
+        &__silver,
+        &__gold {
+            min-width: 115px;
+        }
+        &__stars {
+            min-width: auto;
+            margin-left: 5px;
+        }
+
     }
 }

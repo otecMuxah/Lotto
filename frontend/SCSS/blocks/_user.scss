@@ -1,9 +1,11 @@
 .user {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 446px;
     &__image {
-        width: 215px;
-        height: 215px;
+        width: 190px;
+        height: 190px;
         border-radius: 50%;
         box-shadow: inset 0 0 3px 0 rgba(5, 5, 5, 0.75);
         border: 10px rgba(22, 35, 0, 0.502) solid;
@@ -11,7 +13,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-color: $color-white;
-        margin-right: 20px;
+        margin-left: 19px;
     }
     &__buttons-holder {
         display: flex;
@@ -32,5 +34,28 @@
         align-items: center;
         justify-content: center;
         text-shadow: 0.5px;
+    }
+}
+
+@include phone {
+    .user {
+        margin-top: 40px;
+        width: 90%;
+        margin-bottom: 80px;
+        &__button {
+            width: 120px;
+            height: 33px;
+            font-size: 14px;
+        }
+        &__image {
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            border: 4px;
+        }
+        &__buttons-holder {
+            min-height: 85px;
+        }
+
     }
 }

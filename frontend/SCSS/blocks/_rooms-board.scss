@@ -83,3 +83,11 @@
         transform: translate(-50%,-50%);
     }
 }
+
+@include phone {
+    .rooms-board {
+        &__item {
+            font-size: 14px;
+        }
+    }
+}

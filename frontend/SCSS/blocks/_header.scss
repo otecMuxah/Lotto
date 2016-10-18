@@ -20,11 +20,36 @@
         justify-content: space-between;
         width: 100%;
     }
+    &--index {
+        min-height: 70px;
+        box-sizing: border-box;
+    }
     &--rooms {
         min-height: 122px;
         align-items: flex-end;
         justify-content: flex-start;
         padding-bottom: 3px;
         box-sizing: border-box;
+    }
+}
+@include desktop {
+    .header {
+        margin: 0;
+        padding: 12px 0;
+    }
+}
+@include phone {
+    .header {
+        min-height: 68px;
+        box-sizing: border-box;
+        &__logo {
+            display: none;
+        }
+        &--index {
+            min-height: 65px;
+        }
+        &--rooms {
+            flex-direction: column;
+        }
     }
 }

@@ -33,3 +33,35 @@
 
 
 }
+
+@include phone {
+    .controls {
+        &__list {
+            background: none;
+            width: 100%;
+            padding: 0;
+        }
+        &__link {
+            height: 60px;
+            width: 60px;
+            &--sound {
+                background-position: -6px -1720px;;
+            }
+            &--settings {
+                background-position: -6px -1720px;
+            }
+            &--play {
+                background-position: -1px -1575px;
+                width: 68px;
+                height: 68px;
+                margin: 0;
+            }
+            &--help {
+                background-position: -6px -1790px;
+            }
+            &--share {
+                background-position: -7px -1862px;
+            }
+        }
+    }
+}

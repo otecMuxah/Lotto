@@ -2,7 +2,6 @@
     header {
         padding-top: 9px;
         padding-bottom: 6px;
-        min-height: auto;
     }
     &__item {
         display: flex;
@@ -54,7 +53,7 @@
         }
     }
     &__number {
-        font: 700 32px $font_light;
+        font: 32px $font_bold;
         margin-right: 13px;
     }
     &__name {
@@ -112,4 +111,31 @@
             font-size: 25px;
         }
     }
+}
+
+@include phone {
+    .after-game{
+        &__wrapper {
+            padding: 60px 5px 30px;;
+        }
+        &__list {
+            width: 100%;
+        }
+        &__barrels {
+            width: 98%;
+            li {
+                &:nth-child(11) {
+                    margin-left: 0;
+                }
+            }
+        }
+        &__buttons-holder {
+            width: 98%;
+            .button {
+                padding: 15px 29px;
+                font-size: 14px;
+            }
+        }
+    }
+
 }

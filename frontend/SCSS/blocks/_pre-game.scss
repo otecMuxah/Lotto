@@ -43,3 +43,22 @@
         }
     }
 }
+
+@include phone {
+    .pre-game {
+        &__invite {
+            padding: 0 15px;
+            &:after {
+                display: none;
+            }
+        }
+        &__bet-wrapper {
+            span {
+                font-size: 14px;
+            }
+        }
+        &__list {
+            column-count: 1;
+        }
+    }
+}
