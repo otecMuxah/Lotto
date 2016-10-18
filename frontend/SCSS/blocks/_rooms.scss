@@ -4,6 +4,9 @@
     min-height: 100vh;
     height: 100%;
     flex-direction: column;
+    header {
+        min-height: 122px;
+    }
     &__slider {
         width: 401px;
         .ui-slider-handle {

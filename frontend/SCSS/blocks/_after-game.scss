@@ -1,0 +1,115 @@
+.after-game {
+    header {
+        padding-top: 9px;
+        padding-bottom: 6px;
+        min-height: auto;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-white;
+        margin-bottom: 22px;
+        .buttons-holder {
+            display: flex;
+        }
+        .button {
+            margin-left: 4px;
+            padding: 10px;
+        }
+    }
+    &__wrapper {
+        margin: 45px 0;
+        background: rgba(22,22,22,0.8);
+        box-shadow: 0 3px 0 0 rgba(160, 160, 160, 0.4);
+        padding: 60px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__list {
+        width: 600px;
+        margin-bottom: 27px;
+    }
+    &__avatar {
+        width: 63px;
+        height: 63px;
+        border-radius: 50%;
+        background: #fff;
+        margin-right: 13px;
+
+    }
+    &__user-wrapper {
+        display: flex;
+        align-items: center;
+
+    }
+    &__money {
+        font: 700 24px $font_light;
+        padding: 4px 40px 0 0;
+        &:after {
+            right: -2px;
+            left: auto;
+        }
+    }
+    &__number {
+        font: 700 32px $font_light;
+        margin-right: 13px;
+    }
+    &__name {
+        font: 24px $font_light;
+        position: relative;
+    }
+    &__score {
+        position: absolute;
+        color: #df101b;
+        bottom: -13px;
+        left: 0;
+        font-size: 13px;
+    }
+    &__barrels {
+        display: flex;
+        flex-wrap: wrap;
+        width: 470px;
+        margin-bottom: 92px;
+        li {
+            margin-right: 5px;
+            position: relative;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-position: -63px -1435px;
+                width: 40px;
+                height: 40px;
+                z-index: 0;
+            }
+            &:nth-child(11) {
+                margin-left: 20px;
+            }
+        }
+    }
+    &__barrel {
+        position: relative;
+        z-index: 1;
+        font: 20px $font_light;
+    }
+    &__buttons-holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 422px;
+        .button {
+            padding: 25px 49px;
+            font-size: 25px;
+        }
+    }
+}
