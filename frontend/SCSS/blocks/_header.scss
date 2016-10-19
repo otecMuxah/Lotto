@@ -51,5 +51,10 @@
         &--rooms {
             flex-direction: column;
         }
+        &__ingame {
+            flex-direction: column-reverse;
+            margin-left: -30px;
+        }
+
     }
 }

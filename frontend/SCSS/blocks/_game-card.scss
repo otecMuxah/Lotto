@@ -28,3 +28,22 @@
 
     }
 }
+
+@include phone {
+    .game-card {
+        &__cell {
+            width: auto;
+            height: auto;
+            min-width: 32px;
+            min-height: 32px;
+            font-size: 30px;
+            &--hit,
+            &--miss
+            {
+                transform: scale(0.7);
+            }
+        }
+
+    }
+
+}

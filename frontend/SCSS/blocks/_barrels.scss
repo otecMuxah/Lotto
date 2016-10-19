@@ -61,3 +61,15 @@
     }
 
 }
+@include desktop {
+    .barrels {
+        transform: scale(0.8);
+        margin-right: -77px;
+    }
+}
+@include phone {
+    .barrels {
+        transform: scale(0.7);
+        margin-top: 30px;
+    }
+}

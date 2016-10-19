@@ -65,3 +65,16 @@
         }
     }
 }
+@include desktop {
+    .userlist {
+        transform: scale(0.8);
+        margin-right: -77px;
+    }
+}
+@include phone {
+    .userlist {
+        transform: scale(0.7);
+        margin-bottom: 20px;
+
+    }
+}
