@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>Home</title>
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <script src="scripts/jquery-3.1.0.min.js"></script>
@@ -30,8 +31,8 @@
 <body>
 <div class="wrapper">
     <div class="wrapper--inner rooms">
-        <header class="header ">
-            <div class="header__ingame header--rooms">
+        <header class="header header--room">
+            <div class="header--rooms">
                 <a href="#" class="rooms__button button button--red">Назад</a>
                 <div class="rooms__display">
                     <span>Отображать только:</span>
@@ -212,6 +213,23 @@
                                                                                           class="create-game__button button button--green">Создать</a>
                 </li>
             </ul>
+            <form class="create-game__form" action="post">
+                <label class="create-game__label" for="input-name">Name :
+                    <input type="text" class="create-game__input" id="input-name">
+                </label>
+                <label class="create-game__label" for="input-bet">Bet :
+                    <input type="text" class="create-game__input" id="input-bet">
+                </label>
+                <div class="create-game__form--wrapper">
+                    <label for="input-checkbox">Lorem
+                        <input type="checkbox" class="input-checkbox" id="input-checkbox">
+                    </label>
+                    <label for="input-checkbox">Lorem
+                        <input type="checkbox" class="input-checkbox" id="input-checkbox">
+                    </label>
+                </div>
+
+            </form>
         </div>
 
     </div>

@@ -25,11 +25,18 @@
         box-sizing: border-box;
     }
     &--rooms {
+        display: flex;
         min-height: 122px;
         align-items: flex-end;
         justify-content: flex-start;
         padding-bottom: 3px;
         box-sizing: border-box;
+        position: relative;
+        width: 100%;
+
+    }
+    &--room {
+        min-height: 122px;
     }
 }
 @include desktop {
@@ -50,6 +57,11 @@
         }
         &--rooms {
             flex-direction: column;
+            width: 96%;
+
+        }
+        &--room {
+            min-height: 155px;
         }
         &__ingame {
             flex-direction: column-reverse;

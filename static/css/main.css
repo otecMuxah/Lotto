@@ -119,6 +119,8 @@ body {
   .wrapper--inner {
     margin: 0 auto;
     max-width: 1000px;
+    padding: 0 5px;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -194,6 +196,9 @@ body {
     min-height: 70px;
     box-sizing: border-box; }
   .header--rooms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     min-height: 122px;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -202,7 +207,11 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-bottom: 3px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative;
+    width: 100%; }
+  .header--room {
+    min-height: 122px; }
 
 @media screen and (max-width: 1020px) {
   .header {
@@ -221,7 +230,10 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      width: 96%; }
+    .header--room {
+      min-height: 155px; }
     .header__ingame {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -381,6 +393,8 @@ body {
     min-width: 115px; }
   .resources__stars {
     min-width: auto;
+    margin-left: 5px; }
+  .resources__gem {
     margin-left: 5px; } }
 
 .main-part--ingame {
@@ -985,7 +999,8 @@ body {
         outline: 0; }
     .rooms__slider .ui-slider {
       background: url("../images/slider-bg.png") no-repeat;
-      width: 401px;
+      width: 100%;
+      background-size: contain;
       height: 16px;
       border: 0; }
     .rooms__slider .ui-slider-range {
@@ -1086,13 +1101,17 @@ body {
     min-height: 18px; }
 
 @media screen and (max-width: 610px) {
+  .rooms__display {
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
   .rooms__button {
     font-size: 0;
     padding-right: 7px;
     margin-bottom: 10px; }
   .rooms__resources .resources__gold,
   .rooms__resources .resources__silver {
-    min-width: 105px; }
+    min-width: 70px; }
   .rooms__slider {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1208,8 +1227,8 @@ body {
   box-shadow: 0px -2px 0px 0px rgba(160, 160, 160, 0.004);
   z-index: 10; }
   .create-game--active {
-    -webkit-transform: translate(-50%, -26%);
-            transform: translate(-50%, -26%);
+    -webkit-transform: translate(-50%, -10%);
+            transform: translate(-50%, -10%);
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
@@ -1262,6 +1281,35 @@ body {
     color: #fff;
     font-size: 22px;
     font-weight: 700; }
+  .create-game__form {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #fff;
+    font: 16px Roboto-Light, Arial, sans-serif;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .create-game__form--wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .create-game__label {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-bottom: 10px; }
+  .create-game__input {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.502);
+    box-shadow: 0px 1px 3px 0px rgba(58, 69, 37, 0.8), inset 0px 1px 4.15px 0.85px rgba(5, 5, 5, 0.6);
+    box-sizing: border-box;
+    height: 36px;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px; }
 
 @media screen and (max-width: 610px) {
   .create-game {
@@ -1271,7 +1319,14 @@ body {
           flex-basis: 25%; }
     .create-game__buttons a {
       font-size: 14px;
-      padding: 16px 8px; } }
+      padding: 16px 8px; }
+    .create-game__form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .create-game__input {
+      margin-bottom: 10px; } }
 
 .after-game header {
   padding-top: 9px;

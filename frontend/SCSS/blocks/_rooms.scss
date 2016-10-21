@@ -22,7 +22,8 @@
         }
         .ui-slider {
             background: url("../images/slider-bg.png") no-repeat;
-            width: 401px;
+            width: 100%;
+            background-size: contain;
             height: 16px;
             border: 0;
         }
@@ -138,7 +139,11 @@
 
 @include phone {
     .rooms {
-
+        &__display {
+            font-size: 12px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
         &__button {
             font-size: 0;
             padding-right: 7px;
@@ -147,7 +152,7 @@
         &__resources {
             .resources__gold,
             .resources__silver {
-                min-width: 105px;
+                min-width: 70px;
             }
         }
         &__slider {
