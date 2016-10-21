@@ -797,7 +797,9 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
   .barrels__barrel {
     width: 42px;
     height: 42px;
@@ -814,7 +816,9 @@ body {
     background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 1px; }
+    margin-left: 1px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
   .barrels__item {
     width: 55px;
     height: 55px;
@@ -828,17 +832,9 @@ body {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .barrels__item:first-child {
-      width: 116px;
-      height: 116px;
-      background-position: 0 -893px;
-      margin-left: 5px;
-      margin-bottom: 7px; }
-      .barrels__item:first-child .barrels__barrel {
-        width: 97px;
-        height: 97px;
-        font: 65px Roboto-Light, Arial, sans-serif; }
+            justify-content: center;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
     .barrels__item:last-child {
       background-position: -61px -1024px;
       position: relative;
@@ -855,6 +851,32 @@ body {
         width: 59px;
         height: 62px;
         z-index: 0; }
+    .barrels__item--first-barrel {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      width: 116px;
+      height: 116px;
+      background-position: 0 -893px;
+      margin-left: 5px;
+      margin-bottom: 7px; }
+      .barrels__item--first-barrel .barrels__barrel {
+        width: 97px;
+        height: 97px;
+        font: 65px Roboto-Light, Arial, sans-serif; }
+
+.shrink {
+  height: 55px !important;
+  width: 55px !important;
+  background-position: 0 -1022px !important; }
+  .shrink .barrels__item--first-barrel {
+    width: 42px;
+    height: 42px; }
+  .shrink .barrels__barrel {
+    width: 42px;
+    height: 42px;
+    font-size: 28px !important; }
 
 @media screen and (max-width: 1020px) {
   .barrels {
@@ -867,6 +889,22 @@ body {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
     margin-top: 30px; } }
+
+@-webkit-keyframes shrink {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+
+@keyframes shrink {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
 
 .addons {
   display: -webkit-box;
